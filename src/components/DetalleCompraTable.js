@@ -15,7 +15,7 @@ const DetalleCompraTable = () => {
   useEffect(() => {
     const fetchDetalleCompras = async () => {
       try {
-        const response = await fetch("http://localhost:8080/api/detalle-compras");
+        const response = await fetch("https://backendspringboot-b4fpe9e9faegc5ej.eastus-01.azurewebsites.net/api/detalle-compras");
         const data = await response.json();
         //console.log("Datos obtenidos:", data);
         setDetalleCompras(data); // Guarda los datos en el estado
